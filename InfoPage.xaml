@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="GridTutorial.InfoPage">
+    <StackLayout
+        BackgroundColor="DarkCyan"
+        Padding="20">
+        <Label
+            x:Name="PersonName"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="Title"
+            TextColor="NavajoWhite"
+           />
+    <Grid Margin="20,35,20,20">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.5*" />
+        <ColumnDefinition Width="0.5*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50" />
+        <RowDefinition Height="50" />
+        <RowDefinition Height="50" />
+    </Grid.RowDefinitions>
+    <Button Text="Name"
+             Clicked="OnButtonClicked"/>
+        <Button Grid.Column="1"
+                Grid.Row="0"
+                Text="Date of Birth"
+                Clicked="OnButtonClicked1"/>
+        <Entry Grid.Column="0"
+               Grid.Row="1"
+           Placeholder="Zipcode"
+           MaxLength="5"
+           IsSpellCheckEnabled="false"
+           IsTextPredictionEnabled="True"
+           IsPassword="False"/>
+    <Button Grid.Column="1"
+           Grid.Row="1"
+           Text="Address"
+            Clicked="OnButtonClicked2"/>
+        <Button Grid.Column="0"
+           Grid.Row="2"
+           Text="State"
+                Clicked="OnButtonClicked3"/>
+        <Button Grid.Column="1"
+           Grid.Row="2"
+           Text="Country"
+           Clicked="OnButtonClicked4"/>
+        
+     </Grid>
+        
+        <Button
+                Text="Account Services"
+                Clicked="OnClickedAccount"
+                Padding="35">
+            </Button>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="GridTutorial.Balance2">
+    <StackLayout
+            Background="Darkcyan"
+            Padding="50">
+        <Label Text="Balance:"
+               FontSize="70"
+               HorizontalTextAlignment="Center"
+               TextColor="NavajoWhite"
+         />
+        
+        <Label Text="$1,583,424.73"
+               FontSize="40"
+               TextColor="NavajoWhite"
+               HorizontalTextAlignment="Center"
+         />
+         <Button
+                Text="Logout"
+                Clicked="OnClickedHome"
+                Padding="35">
+           
+         </Button>
+       
+
+    </StackLayout> 
+   
+</ContentPage>
+      
+

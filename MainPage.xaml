@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridTutorial.MainPage">
+    <StackLayout
+        BackgroundColor="DarkCyan"
+        Padding="0,30,0,30">
+        <Image Source="logo.png"
+               HeightRequest="300"
+               WidthRequest="300"
+               />
+        <Label Text="Welcome to Venture Bank"
+                   HorizontalTextAlignment="Center"
+                   TextColor="NavajoWhite"
+                   FontSize="32"
+                   Padding="0,30,0,30"/>
+        <Entry
+            Placeholder="Your Name"
+            x:Name="NameTextBox"
+            TextColor="Black"
+            MaxLength="20"
+            IsSpellCheckEnabled="False"
+            IsPassword="False"
+            IsTextPredictionEnabled="False"/>
+        <Entry
+           Placeholder="Username"
+           TextColor="Black"
+           MaxLength="50"
+           IsSpellCheckEnabled="false"
+           IsTextPredictionEnabled="False"
+           IsPassword="False"/>
+        <Entry 
+           Placeholder="Password"
+           MaxLength="36"
+           IsSpellCheckEnabled="false"
+           IsTextPredictionEnabled="False"
+           IsPassword="True"/>
+        <Button
+            Text="login"
+            BackgroundColor="LightGray"
+            TextColor="Black"
+            Padding="0,30,0,30"
+            Clicked="OnButtonClickedNext"/>
+    </StackLayout>
+
+</ContentPage>

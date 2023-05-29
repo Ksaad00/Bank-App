@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridTutorial.MyTabbedPage">
+  
+  <ContentPage Title="Pay and Transfer" BackgroundColor="DarkCyan">
+        <StackLayout Padding="0,30,0,30">
+        <Button Text="Zelle"
+                BackgroundColor="Purple"
+                TextColor="white"
+                Padding="35"/>
+        <Button Text="Connect To Paypal"
+                BackgroundColor="GreenYellow"
+                Padding="35"/>
+            </StackLayout>
+  </ContentPage>
+  <ContentPage Title="Accounts" BackgroundColor="DarkCyan">
+        <StackLayout Padding="0,30,0,30">
+               <Button
+                Text="Checking Account 1234"
+                Clicked="OnClickedBalance"
+                Padding="35"/>
+             <Button
+                Text="Business Account 5678"
+                Clicked="OnClickedBalance2"
+                Padding="35"/>
+            </StackLayout>
+    </ContentPage>
+
+  <ContentPage Title="Contact Information" BackgroundColor="DarkCyan">
+        <StackLayout Padding="0,30,0,30">
+               <Entry
+                Placeholder="Update Email"
+                IsPassword="False"
+                IsTextPredictionEnabled="True"/>
+             <Entry
+                Placeholder="Update Address"
+                IsPassword="False"
+                IsTextPredictionEnabled="True"/>
+            <Entry
+                Placeholder="Update Password"
+                IsPassword="True"
+                IsTextPredictionEnabled="False"/>
+            <Button
+                Text="Save"
+                Padding="35"
+                />
+            </StackLayout>
+    </ContentPage>
+</TabbedPage>
